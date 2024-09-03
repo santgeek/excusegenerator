@@ -20,21 +20,21 @@ window.onload = function() {
   function randomItem(arr) {
     return arr[Math.floor(Math.random() * arr.length)];
   }
-  let element = randomItem(who);
-  let element2 = randomItem(action);
-  let element3 = randomItem(what);
-  let element4 = randomItem(when);
+  let quien = randomItem(who);
+  let accion = randomItem(action);
+  let que = randomItem(what);
+  let cuando = randomItem(when);
 
   function excuse(a, b, c, d) {
     return a + " " + b + " " + c + " " + d;
   }
-
+// Esta funcion me imprime la excusa
   function printExcuse() {
     document.getElementById("excuse").innerHTML = excuse(
-      element,
-      element2,
-      element3,
-      element4
+      quien,
+      accion,
+      que,
+      cuando
     );
   }
 
